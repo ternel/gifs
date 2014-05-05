@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+
+  <!--[if lt IE 9]>
+  <script src="lib/html5shim.js"></script>
+  <![endif]-->
+
+  <!-- These are some core styles the slideshow app requires -->
+  <link rel="stylesheet" href="lib/styles.css" />
+
+  <!-- These are the styles you'll add to make the slides look great -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>Les Gifs animés !</title>
+</head>
+<body>
+
+  <header>
+    <h1>Les Gifs animés</h1>
+    <nav>
+      <ul>
+        <li><button id="prev-btn" title="Previous slide">Previous Slide</button></li>
+        <li><span id="slide-number"></span>/<span id="slide-total"></span></li>
+        <li><button id="next-btn" title="Next Slide">Next Slide</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="deck">
+
+    <!-- Begin slides -->
+    <section class="center">
+
+        <h1>Le GIF</h1>
+        <h2>Un format qu'il est bien.</h2>
+
+        <img src="images/home.gif" />
+
+
+        <p>
+          Présenté par Benjamin Clay &amp; Damien Alexandre - © 2012 <small>(non en fait on s'en fout)</small>
+        </p>
+
+    </section>
+
+    <section class="center">
+        <h1>Se prononce JIF</h1>
+        <h2>Et non pas guif</h2>
+
+        <img class="action" src="images/seriously.gif" /><!-- class="action" permet de faire apparaitre après -->
+
+        <h2 class="action">Ni JUIF</h2>
+
+        <img class="action" src="images/jacob.gif" />
+    </section>
+
+    <section class="center">
+        <h1>Média parfait entre la photo et la vidéo</h1>
+        <h2>Il ne lui manque que le son</h2>
+
+        <img src="images/travaux.gif" />
+    </section>
+
+
+    <section class="center">
+        <h1>Historique</h1>
+
+        <ul>
+          <li>1987 : Compuserve met au point le Graphics Interchange Format</li>
+          <li class="action">1989 : Extension du format pour y mettre plusieurs images et donc créer des animations</li>
+          <li class="action">1995 : Netscape 2 support le Gif Animé</li>
+          <li class="action">2003 : Création de 4Chan</li>
+          <li class="action">2006 : Expiration du dernier brevet, GIF est dans le domaine public !</li>
+          <li class="action">2007 : Création de Tumblr</li>
+        </ul>
+    </section>
+
+
+    <section class="center">
+      <h1>Souvenir</h1>
+
+      <div>
+        <img src="images/ham1.gif" class="freefloat" /><img src="images/ham1.gif" class="freefloat"  />
+        <img src="images/ham1.gif" class="freefloat" /><img src="images/ham1.gif" class="freefloat"  /><img src="images/ham1.gif" class="freefloat"  />
+        <img src="images/ham2.gif" class="freefloat" /><img src="images/ham2.gif" class="freefloat"  />
+        <img src="images/ham2.gif" class="freefloat" /><img src="images/ham2.gif" class="freefloat"  /><img src="images/ham2.gif" class="freefloat"  />
+        <img src="images/ham3.gif" class="freefloat" /><img src="images/ham3.gif" class="freefloat"  />
+        <img src="images/ham3.gif" class="freefloat" /><img src="images/ham3.gif" class="freefloat"  /><img src="images/ham3.gif" class="freefloat"  />
+        <img src="images/ham1.gif" class="freefloat" /><img src="images/ham1.gif" class="freefloat"  />
+        <img src="images/ham1.gif" class="freefloat" /><img src="images/ham1.gif" class="freefloat"  /><img src="images/ham1.gif" class="freefloat"  />
+        <img src="images/ham2.gif" class="freefloat" /><img src="images/ham2.gif" class="freefloat"  />
+        <img src="images/ham2.gif" class="freefloat" /><img src="images/ham2.gif" class="freefloat"  /><img src="images/ham2.gif" class="freefloat"  />
+        <img src="images/ham3.gif" class="freefloat" /><img src="images/ham3.gif" class="freefloat"  />
+        <img src="images/ham3.gif" class="freefloat" /><img src="images/ham3.gif" class="freefloat"  /><img src="images/ham3.gif" class="freefloat"  />
+        <img src="images/ham1.gif" class="freefloat" /><img src="images/ham1.gif" class="freefloat"  />
+        <img src="images/ham1.gif" class="freefloat" /><img src="images/ham1.gif" class="freefloat"  /><img src="images/ham1.gif" class="freefloat"  />
+        <img src="images/ham2.gif" class="freefloat" /><img src="images/ham2.gif" class="freefloat"  />
+        <img src="images/ham2.gif" class="freefloat" /><img src="images/ham2.gif" class="freefloat"  /><img src="images/ham2.gif" class="freefloat"  />
+        <img src="images/ham3.gif" class="freefloat" /><img src="images/ham3.gif" class="freefloat"  />
+        <img src="images/ham3.gif" class="freefloat" /><img src="images/ham3.gif" class="freefloat"  /><img src="images/ham3.gif" class="freefloat"  /><img src="images/ham1.gif" class="freefloat" /><img src="images/ham1.gif" class="freefloat"  />
+        <img src="images/ham1.gif" class="freefloat" /><img src="images/ham1.gif" class="freefloat"  /><img src="images/ham1.gif" class="freefloat"  />
+        <img src="images/ham2.gif" class="freefloat" /><img src="images/ham2.gif" class="freefloat"  />
+        <img src="images/ham2.gif" class="freefloat" /><img src="images/ham2.gif" class="freefloat"  /><img src="images/ham2.gif" class="freefloat"  />
+        <img src="images/ham3.gif" class="freefloat" /><img src="images/ham3.gif" class="freefloat"  />
+        <img src="images/ham3.gif" class="freefloat" /><img src="images/ham3.gif" class="freefloat"  /><img src="images/ham3.gif" class="freefloat"  />
+        <img src="images/ham1.gif" class="freefloat" /><img src="images/ham1.gif" class="freefloat"  />
+        <img src="images/ham1.gif" class="freefloat" /><img src="images/ham1.gif" class="freefloat"  /><img src="images/ham1.gif" class="freefloat"  />
+        <img src="images/ham2.gif" class="freefloat" /><img src="images/ham2.gif" class="freefloat"  />
+        <img src="images/ham2.gif" class="freefloat" /><img src="images/ham2.gif" class="freefloat"  /><img src="images/ham2.gif" class="freefloat"  />
+        <img src="images/ham3.gif" class="freefloat" /><img src="images/ham3.gif" class="freefloat"  />
+        <img src="images/ham3.gif" class="freefloat" /><img src="images/ham3.gif" class="freefloat"  /><img src="images/ham3.gif" class="freefloat"  />
+
+        <audio src="webhamster.wav" id="hamsound" controls loop />
+      </div>
+
+    </section>
+
+     <section class="center">
+        <h1>Compression LZW</h1>
+
+        <ul class="force-list">
+          <li>Lempel-Ziv-Welch</li>
+          <li class="action">6 ans après LZ78</li>
+          <li class="action">Un exemple !</li>
+        </ul>
+
+        <p class="action">TOBEORNOTTOBEORTOBEORNOT</p>
+        <p class="action">192 bits</p>
+        <table class="action" style="margin-left:30%">
+          <tr>
+            <td>TO</td><td><256></td>
+          </tr>
+          <tr>
+            <td>BE</td><td><258></td>
+          </tr>
+          <tr>
+            <td>EO</td><td><259></td>
+          </tr>
+          <tr>
+            <td>OR</td><td><260></td>
+          </tr>
+          <tr>
+            <td>RN</td><td><261></td>
+          </tr>
+          <tr>
+            <td>OT</td><td><263></td>
+          </tr>
+          <tr>
+            <td>TOB</td><td><265></td>
+          </tr>
+        </table>
+        <p class="action">TOBEORNOT<256><258><260><265><259><261><263></p>
+        <p class="action">144 bits</p>
+    </section>
+
+
+    <section class="center">
+        <h1>Algorithme de compression et décompression</h1>
+
+        <img class="action" src="images/dodo.gif" />
+
+        <p class="action">KIDDIN'!</p>
+    </section>
+
+
+    <section class="center">
+        <h1>Cinemagraph</h1>
+
+        <img src="images/cine1.gif" class="freefloat" />
+        <img src="images/cine2.gif" class="freefloat" />
+        <img src="images/cine5.gif" class="freefloat" />
+        <img src="images/cine3.gif" class="freefloat" />
+        <img src="images/cine4.gif" class="freefloat" />
+
+    </section>
+
+    <section class="center">
+        <h1>Le GIF comme moyen d'expression</h1>
+
+      <div class="freefloat">
+        <h2>La joie</h2>
+        <img src="images/joie.gif" />
+
+      </div><div class="freefloat">
+
+        <h2>La tristesse</h2>
+
+        <img src="images/sad.gif" />
+      </div><div class="freefloat">
+        <h2>Le WTF (code crado ?)</h2>
+
+        <img src="images/wtf.gif" />
+      </div><div class="freefloat">
+        <h2>L'aberration</h2>
+
+        <img src="images/omg.gif" />
+      </div>
+    </section>
+
+    <section class="center">
+      <h1>Où les trouver ?</h1>
+
+      <h2>Des sites spécialisés</h2>
+      <ul class="force-list">
+        <li><a href="http://www.reactiongifs.com/">http://www.reactiongifs.com/</a></li>
+        <li><a href="http://forgifs.com/">http://forgifs.com/</a></li>
+        <li><a href="http://gifolas-cage.tumblr.com/">http://gifolas-cage.tumblr.com/</a></li>
+        <li><a href="http://www.jamesvandermemes.com/">http://www.jamesvandermemes.com/</a></li>
+        <li><a href="http://knowyourmeme.com/">http://knowyourmeme.com/</a></li>
+        <li>...</li>
+      </ul>
+
+      <img src="images/gifolas.gif" class="" />
+    </section>
+
+    <section class="center">
+      <h1>Où les trouver ?</h1>
+
+      <h2>Les profondeurs de l'interwebz</h2>
+
+      <p class="action">Protips : Installer RES !</p>
+      <p>Reddit : <a href="http://reddit.com/r/gif">/r/gif</a>, <a href="http://reddit.com/r/gifs">/r/gifs</a>, /r/reactiongifs, ...</p>
+      <img src="images/reddit.png" />
+
+    </section>
+
+    <section class="center">
+      <h1>Où les trouver ?</h1>
+
+      <h2>Le trou du cul de l'interwebz /!\ NSFW</h2>
+      <p>4chan : /gif, /wsg ou /b/</p>
+      <img src="images/4chan.png" />
+
+      <p><small>Protips : Installer 4chan Chrome Extension !</small></p>
+    </section>
+
+    <section class="center">
+        <h1>Appliquer la GIF ATTITUDE<small style="display:block;float:right;font-size:0.2em">© C. Porteneuve</small></h1>
+
+        <h2>Tous les emails sont "GIFFABLE".</h2>
+
+        <h2>Exemple avec un mail de bienvenue.</h2>
+
+        <img src="images/welcome.gif" />
+    </section>
+
+    <section class="center">
+        <img src="images/nouvelle.png" class="fullscreen" />
+    </section>
+
+    <section class="center">
+        <img src="images/nouvelle-highlight.png" class="fullscreen" />
+    </section>
+
+    <section class="center">
+        <h1>Réponse efficace et conviviale</h1>
+
+        <ul class="force-list">
+          <li>enfants (les gifs avec des bébés - EPIC)</li>
+          <li>équitation (potentiel de LOL avec des poneys)</li>
+          <li>poker (potentiel)</li>
+        </ul>
+
+        <p>Recherche rapide sur reddit et c'est le WIN:</p>
+
+        <img src="images/poker.gif" />
+
+        <p>Sans même tomber dans la facilité avec les bébés.</p>
+    </section>
+
+    <section class="center">
+      <h1>One more thing!</h1>
+
+      <img src="images/rudy-scared.gif" />
+    </section>
+
+    <section class="center">
+      <h1>Faire son propre gif !</h1>
+
+      <img class="action" src="images/1-dossier.png" />
+    </section>
+
+    <section class="center">
+      <h1>Faire son propre gif !</h1>
+
+      <img src="images/2-virtualdub.png" />
+    </section>
+
+    <section class="center">
+      <h1>Faire son propre gif !</h1>
+
+      <img src="images/jurassic-park.gif" />
+    </section>
+
+    <section class="center">
+      <h1>Faire son propre gif !</h1>
+
+      <img src="images/rudy-waoh.gif" />
+    </section>
+
+    <section class="center">
+      <h1>MERCI \o/ Questions ?</h1>
+
+      <p>NON on veut des bières !</p>
+
+
+      <img src="images/cat.gif" />
+
+      <audio src="nyan.mp3" id="nyan" controls loop />
+
+    </section>
+
+    <!-- /End slides -->
+  </div>
+  <!-- /deck -->
+
+  <script src="lib/jquery-1.5.2.min.js"></script>
+  <script src="lib/jquery.jswipe-0.1.2.js"></script>
+  <script src="lib/htmlSlides.js"></script>
+  <script>
+    //Do our business when the DOM is ready for us
+    $(function() {
+
+      //You can trigger Javascript based on the slide number like this:
+      $('html').bind('newSlide', function(e, id) {
+        switch(id) {
+          case 5:
+            document.getElementById('hamsound').play()
+            break;
+          case 6:
+            document.getElementById('hamsound').pause()
+            break;
+          case 23:
+            document.getElementById('nyan').play()
+            break;
+        }
+      });
+
+      //One little option: hideToolbar (boolean; default = false)
+      htmlSlides.init({ hideToolbar: true });
+
+    });
+  </script>
+  </body>
+</html>
